@@ -3,12 +3,12 @@
 /**
  * set_bit - set bit 2 1.
  * gsdf indeq.
- * @m: ptr of an unsigned long integer.
+ * @w: ptr of an unsigned long integer.
  * @indeq: indeq of bit...
  *
  * Return: 1 if pass, -1 if failed.
  */
-int set_bit(unsigned long int *m, unsigned int indeq)
+int set_bit(unsigned long int *w, unsigned int indeq)
 {
 	unsigned int m;
 
@@ -16,7 +16,7 @@ int set_bit(unsigned long int *m, unsigned int indeq)
 		return (-1);
 
 	m = 1 << indeq;
-	*n = (*n | m);
+	*w = (*w | m);
 
 	return (1);
 }

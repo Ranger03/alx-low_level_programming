@@ -10,13 +10,13 @@
  */
 int set_bit(unsigned long int *w, unsigned int indeq)
 {
-	unsigned int m;
+	unsigned int j;
 
 	if (indeq > 63)
 		return (-1);
 
-	m = 1 << indeq;
-	*w = (*w | m);
+	j = 1 << indeq;
+	*w = (*w | j);
 
 	return (1);
 }
